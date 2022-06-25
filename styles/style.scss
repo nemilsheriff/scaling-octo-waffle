@@ -1,0 +1,137 @@
+@import 'breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+$color-bright-orange: hsl(31, 77%, 52%);
+$color-dark-cyan: hsl(184, 100%, 22%);
+$color-very-dark-cyan: hsl(179, 100%, 13%);
+$color-transparent-white: hsla(0, 0%, 100%, 0.75);
+$color-very-light-gray: hsl(0, 0%, 95%);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include xl {
+            height: 100vh;
+            column-gap: 0px;
+        }
+
+        #container {
+            margin: 3rem 0;
+
+            .card {
+                color: white;
+                font-family: 'Big Shoulders Display', cursive;
+                font-weight: 400;
+                padding: 3rem;
+                max-width: 200px;
+
+                @include xl {
+                    display: inline-block;
+                }
+
+                h1 {
+                    color: $color-very-light-gray;
+                    font-family: 'Big Shoulders Display', cursive;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: $color-transparent-white;
+                }
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: $color-transparent-white;
+                    cursor: pointer;
+                    width: 7rem;
+                    text-align: center;
+                    padding: 0.5rem 0;
+                    margin-top: 2rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .bright-orange {
+                background-color: $color-bright-orange;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                @include xl {
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                a {
+                    color: $color-bright-orange;
+
+                    &:hover {
+                        background-color: $color-bright-orange;
+                        color: $color-transparent-white;
+                        outline: 1px solid $color-transparent-white;
+                    }
+                }
+            }
+
+            .dark-cyan {
+                background-color: $color-dark-cyan;
+
+                @include xl {
+                    margin-left: -3.25px;
+                    margin-right: -3.8px;
+                }
+
+                a {
+                    color: $color-dark-cyan;
+
+                    &:hover {
+                        background-color: $color-dark-cyan;
+                        color: $color-transparent-white;
+                        outline: 1px solid $color-transparent-white;
+                    }
+                }
+            }
+
+            .very-dark-cyan {
+                background-color: $color-very-dark-cyan;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                @include xl {
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 10px;
+                }
+
+                a {
+                    color: $color-very-dark-cyan;
+
+                    &:hover {
+                        background-color: $color-very-dark-cyan;
+                        color: $color-transparent-white;
+                        outline: 1px solid $color-transparent-white;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

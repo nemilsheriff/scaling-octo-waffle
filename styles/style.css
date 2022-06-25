@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  body section {
+    height: 100vh;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+}
+body section #container {
+  margin: 3rem 0;
+}
+body section #container .card {
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 400;
+  padding: 3rem;
+  max-width: 200px;
+}
+@media (min-width: 1440px) {
+  body section #container .card {
+    display: inline-block;
+  }
+}
+body section #container .card h1 {
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+body section #container .card p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+body section #container .card a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: hsla(0deg, 0%, 100%, 0.75);
+  cursor: pointer;
+  width: 7rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+body section #container .bright-orange {
+  background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (min-width: 1440px) {
+  body section #container .bright-orange {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+}
+body section #container .bright-orange a {
+  color: hsl(31deg, 77%, 52%);
+}
+body section #container .bright-orange a:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.75);
+}
+body section #container .dark-cyan {
+  background-color: hsl(184deg, 100%, 22%);
+}
+@media (min-width: 1440px) {
+  body section #container .dark-cyan {
+    margin-left: -3.25px;
+    margin-right: -3.8px;
+  }
+}
+body section #container .dark-cyan a {
+  color: hsl(184deg, 100%, 22%);
+}
+body section #container .dark-cyan a:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.75);
+}
+body section #container .very-dark-cyan {
+  background-color: hsl(179deg, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media (min-width: 1440px) {
+  body section #container .very-dark-cyan {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
+body section #container .very-dark-cyan a {
+  color: hsl(179deg, 100%, 13%);
+}
+body section #container .very-dark-cyan a:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.75);
+}
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
